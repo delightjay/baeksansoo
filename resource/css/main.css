@@ -1,0 +1,173 @@
+/* 메인 컨텐츠 스타일 */
+#content div.section-main {
+    width: 100%;
+}
+#content div.section-main div.video-wrap {
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 100px;
+    position: relative;
+}
+#content div.section-main div.video-wrap div.text-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+#content div.section-main div.video-wrap div.text-main > h1 {
+    font-weight: 300;
+    line-height: 55px;
+}
+#content div.section-main div.video-wrap div.text-main > h1 > b {
+    font-weight: 600;
+}
+#content div.section-main video#video-player {
+    background-color: #000;
+    background-position: center center;
+    z-index: 3;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+content h3.title-h3 {
+    font-size: 22px;
+}
+#content div.board-wrap {
+    margin-top: 20px;
+}
+#content div.board-wrap ul li {
+    float: left;
+    width: 33.3333%;
+}
+#content div.board-wrap ul li p.tit {
+    font-size: 18px;
+    font-weight: 600;
+}
+#content div.board-wrap ul li span.date {
+    font-size: 12px;
+    color: #939393;
+    margin-top: 10px;
+    letter-spacing: -0.5px;
+}
+#content div.board-wrap ul li p.con {
+    font-size: 14px;
+    margin-top: 27px;
+}
+#content div.board-wrap ul li div.board-sec {
+    cursor: pointer;
+}
+#content div.board-wrap ul li div.board-sec:hover p.tit {
+    text-decoration: underline;
+}
+
+
+
+
+#content div.qbox {
+    margin: 100px 0;
+}
+#content div.qbox ul li {
+    width: 25%;
+    height: 570px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#content div.qbox ul li p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+#content div.qbox ul li::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -570px;
+    left: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(60,116,142,1) 100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+#content div.qbox ul li:hover>p {
+    top: 290px;
+}
+#content div.qbox ul li:hover::after {
+    top: 0;
+}
+#content div.qbox ul li:nth-child(1) {
+    background: url(../images/qbg01.jpg) no-repeat center center;
+}
+#content div.qbox ul li:nth-child(2) {
+    background: url(../images/qbg02.jpg) no-repeat center center;
+}
+#content div.qbox ul li:nth-child(3) {
+    background: url(../images/qbg03.jpg) no-repeat center center;
+}
+#content div.qbox ul li:nth-child(4) {
+    background: url(../images/qbg04.jpg) no-repeat center center;
+}
+
+
+
+
+#content div.full-banner-box {
+    width: 100%;
+    height: 450px;
+    background: url(../images/b-banner.jpg) no-repeat center center;
+    position: relative;
+}
+#content div.full-banner-box div.f-banner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+#content div.full-banner-box div.f-banner h4 {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#content div.full-banner-box div.f-banner p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 70px;
+}
+#content div.full-banner-box div.f-banner a.d-btn {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    width: 115px;
+}
+#content div.full-banner-box div.f-banner a.d-btn span {
+    position: relative;
+}
+#content div.full-banner-box div.f-banner a.d-btn span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    width: 25px;
+    height: 12px;
+    background: url(../images/arrow-r.png) no-repeat center center;
+    transition: all 0.3s ease;
+}
+#content div.full-banner-box div.f-banner a.d-btn:hover span::after {
+    right: -70px;
+}
